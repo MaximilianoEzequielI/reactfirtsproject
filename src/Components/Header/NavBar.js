@@ -1,6 +1,9 @@
 import React from "react"
 import logo from '../../assets/logo.png'
-import carritoo from '../../assets/carritoo.png'
+import CartWidget from "../CartWidget"
+import ItemListContainer from "../ItemListContainer"
+
+// import carritoo from '../../assets/carritoo.png'
 import './Header.css'
 
 const NavBar = () => {  
@@ -13,7 +16,10 @@ const NavBar = () => {
                 <a className="cart3" href="123">Servicio </a>
                 <a className="login" href="123">Login</a>
             </nav>
-            <img className="carritoo" src={carritoo} alt="" />
+            <a href="123">    
+                <ItemListContainer />
+                <CartWidget />
+            </a>
         </header>
     )
 }
