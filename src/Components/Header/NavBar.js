@@ -1,7 +1,6 @@
 import React from "react"
 import logo from '../../assets/logo.png'
 import CartWidget from "../CartWidget"
-import ItemListContainer from "../ItemListContainer"
 
 // import carritoo from '../../assets/carritoo.png'
 import './Header.css'
@@ -17,7 +16,6 @@ const NavBar = () => {
                 <a className="login" href="123">Login</a>
             </nav>
             <a href="123">    
-                <ItemListContainer />
                 <CartWidget />
             </a>
         </header>
