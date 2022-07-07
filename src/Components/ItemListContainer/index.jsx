@@ -14,13 +14,15 @@ export const ItemListContainer = () => {
     const   [data, setData] = useState([]);
 
     useEffect(() => {   
-        const getData = new Promise(resolve => {    
-            setTimeout(() => {
-                resolve(films);
-            }, 2000);
-        });
-        getData.then(res => setData(res))
-
+         const getData = new Promise(resolve => {    
+             setTimeout(() => {
+                 resolve(films);
+             }, 2000);
+         });
+         getData.then(res => setData(res))
+        // fetch('https://fakestoreapi.com/products') //API API API API
+        //     .then(res=>res.json())
+        //     .then(data=>data(data))
 
     },[])
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import ItemListContainer from './Components/ItemListContainer';
+// import ItemListContainer from './Components/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer';
 import Header from './Components/Header/NavBar'
 import './App.css';
 
@@ -8,7 +9,8 @@ function App() {
     <>
     
     <Header />
-    <ItemListContainer />
+    <ItemDetailContainer />
+    {/* <ItemListContainer /> */}
     
     </>
   );
