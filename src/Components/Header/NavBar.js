@@ -1,6 +1,7 @@
 import React from "react"
 import logo from '../../assets/logo.png'
 import CartWidget from "../CartWidget"
+import { NavLink } from 'react-router-dom';
 
 // import carritoo from '../../assets/carritoo.png'
 import './Header.css'
@@ -10,14 +11,14 @@ const NavBar = () => {
         <header>
             <img src={logo} alt="" />
             <nav>   
-                <a className="cat1" href="123">Inicio </a>
-                <a href="123">Productos </a>
-                <a className="cart3" href="123">Servicio </a>
-                <a className="login" href="123">Login</a>
+                <NavLink className="cat1" to='/'>Inicio </NavLink>
+                <NavLink to='/productos/optical'>Optical </NavLink>
+                <NavLink className="cart3" to='/productos/pulseras'>Pulseras </NavLink>
+                <NavLink className="login" to='/productos/relojes'>Relojes</NavLink>
             </nav>
-            <a href="123">    
+            <NavLink to='cart'>    
                 <CartWidget />
-            </a>
+            </NavLink>
         </header>
     )
 }
