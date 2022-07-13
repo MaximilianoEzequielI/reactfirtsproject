@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import ItemList from '../ItemList';
 import Title from '../Title';
-import ItemCount from '../ItemCount';
+
 import { useParams } from 'react-router-dom';
 
 
@@ -36,14 +36,11 @@ export const ItemListContainer = () => {
 
     },[productosId])
 
-    const onAdd = (quantity) => {   
-        console.log(`Agregaste al carrito ${quantity} unidades`);
-    }
 
     return (    
         <>
             <Title greeting='Maximiliano Ibañez' />
-            <ItemCount initial={0} stock={9} onAdd={onAdd} />
+            
             <ItemList data={data} />
         </>
     ); 

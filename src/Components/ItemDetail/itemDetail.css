@@ -4,3 +4,10 @@
     box-sizing: border-box;
 }
 
+.cartt{ 
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    max-width: 105px;
+    border: solid 5px blanchedalmond;
+}

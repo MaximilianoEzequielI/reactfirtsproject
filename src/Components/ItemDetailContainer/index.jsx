@@ -18,7 +18,7 @@ export const ItemDetailContainer = () => {
         const getData = new Promise(resolve => {    
             setTimeout(() => {
                 resolve(films);
-            }, 2000);
+            }, 1000);
         });
         getData.then(res => setData(res.find(film => film.id === parseInt(detalleId))));
         
