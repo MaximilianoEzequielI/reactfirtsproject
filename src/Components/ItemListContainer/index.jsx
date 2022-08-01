@@ -16,7 +16,7 @@ export const ItemListContainer = () => {
         const querydb = getFirestore();
         const queryCollection = collection(querydb, 'products');
         if (productosId){
-        const queryFilter = query(queryCollection, where('categoria', '==', productosId))
+        const queryFilter = query(queryCollection, where('category', '==', productosId)) //modifiqué el nombre del campo porque puse "categoria" y el correcto es "category". Error mío.
         getDocs(queryFilter)
         .then(res => setData( res.docs.map(product => ({id: product.id, ...product.data()})))) 
           } else {   
