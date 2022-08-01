@@ -25,7 +25,7 @@ const Cart = () => {
                 }   
 
                 <p> 
-                    total: {totalPrice()}; 
+                    total: {totalPrice()} 
                 </p>
             </>
         )
