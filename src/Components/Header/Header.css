@@ -3,10 +3,12 @@
     margin: 0;
 }
 header{ 
-    background-color: white;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom:  5px rgb(62, 56, 56);
+
 }
 
 nav{    
@@ -21,10 +23,10 @@ img{
 a{  
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
-    color: black;
+    color: rgb(23, 21, 21);
     margin: 10px;
     list-style: none;
-    border: solid 10px  white;
+    border: solid 10px  transparent;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -35,22 +37,57 @@ a{
     padding: 15px;
 }
 
-.cat1{
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-    border: solid 10px antiquewhite;
-    border-radius: 15px;
-    
-}
-
-.login{    
-    margin-left: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+.cat1 {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 7px 17px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
     color: black;
-    border: solid 10px  antiquewhite;
-    background-color: antiquewhite;
-    border-radius: 15px;
-}
+    background: antiquewhite;
+    cursor: pointer;
+    transition: ease-out 2.5s;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 rgb(226, 27, 133);;
+  }
+  
+  .cat1:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 rgb(226, 27, 133);
+  }
+  
+  .cat1:active {
+    transform: scale(6);
+  }
+
+
+  .cat2 {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 2.5s;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 antiquewhite;
+  }
+  
+  .cat2:hover {
+    color: black;
+    box-shadow: inset 0 -100px 0 0 antiquewhite;
+  }
+  
+  .cat2:active {
+    transform: scale(6);
+  }

@@ -3,3 +3,12 @@ i{
     font-size: 38px;
     color: palevioletred;
 }
+
+.vent{  
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}

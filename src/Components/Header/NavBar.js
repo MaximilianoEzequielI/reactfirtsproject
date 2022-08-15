@@ -12,9 +12,9 @@ const NavBar = () => {
             <img src={logo} alt="" />
             <nav>   
                 <NavLink className="cat1" to='/'>Inicio </NavLink>
-                <NavLink to='/productos/optical'>Optical </NavLink>
-                <NavLink className="cart3" to='/productos/pulseras'>Pulseras </NavLink>
-                <NavLink className="login" to='/productos/relojes'>Relojes</NavLink>
+                <NavLink className="cat2" to='/productos/optical'>Optical </NavLink>
+                <NavLink className="cat2" to='/productos/pulseras'>Pulseras </NavLink>
+                <NavLink className="cat1" to='/productos/relojes'>Relojes</NavLink>
             </nav>
             <NavLink to='cart'>    
                 <CartWidget />
