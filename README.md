@@ -8,6 +8,9 @@ Tienda virtual  donde podras encontrar accesorios de moda, complementos en tende
 *Una vez instalado, debes iniciar el servidor mediante "npm start" desde la carpeta del proyecto.
 
 #Trabajado con: 
+JavaScript
+React 
+y mucho css
 
 ##
 Navegar entre categorias
